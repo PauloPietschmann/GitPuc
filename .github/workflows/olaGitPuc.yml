@@ -1,12 +1,15 @@
 name: exemplo de um fluxo de trabalho
+
 on:
   workflow_dispatch:
 
 jobs:
   acao01_job:
-    runs-on: ubuntu-latest:
+    runs-on: ubuntu-latest
     steps:
-      - name: primeiro passo imprimir a mesagem olá:
-        run: echo"Ola gente":
-      - name: segundo passo imprimir a mesagem tchau:
-        run: echo"Tchau gente":
+      - name: primeiro passo imprimir a mensagem olá
+        run: echo "Olá gente"
+
+      - name: segundo passo imprimir a mensagem tchau
+        run: echo "Tchau gente"
+
